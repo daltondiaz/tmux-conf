@@ -23,3 +23,19 @@ Apply the configuration sourcing the .tmux.conf:
 ## Neovim
 
 [Neovim configs](https://github.com/daltondiaz/init.lua)
+
+## Go Lang
+
+- [Download golang.org](https://go.dev/dl/)
+- [Installation instructions](https://go.dev/doc/install)
+
+Move the go directory to ```/usr/local``` directory ```sudo mv go /usr/local```, add global variable to your shell (zsh) `nvim ~/.zshrc`
+
+Past end of file:
+
+```sh
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+```
+Update the shell `source ~/.zshrc`

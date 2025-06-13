@@ -5,7 +5,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/Dev/simova ~/Dev/simova/java ~/Dev/personal ~/.config/ ~/Dev/simova/nfs_root/feat/ ~/Dev/simova/nfs_root/ ~/Dev/simova/nfs_root/fix/ ~/Dev/simova/nfs_root/test/  mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/dev/simova ~/dev/simova/java ~/dev/personal ~/.config/ ~/dev/simova/nfs_root/feat/ ~/dev/simova/nfs_root/ ~/dev/simova/nfs_root/fix/ ~/dev/simova/nfs_root/test/  mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
